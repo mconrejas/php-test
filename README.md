@@ -19,21 +19,26 @@ This test project is a PHP-based web application that allows users to search for
 1. Clone the repository and navigate to the project directory:
   ```bash
   git clone https://github.com/mconrejas/php-test.git
-  cd php-test```
+  cd php-test
+  ```
 
 2. Start the Docker containers:
   ```bash
-  docker-compose up -d --build```
+  docker-compose up -d --build
+  ```
 
 3. Access the application in your browser at `http://localhost:8080`
 
 4. Manually run cron to populate database tables. (optional)
   ```bash
-  docker exec -it apache php scripts/cron.php```
+  docker exec -it apache php scripts/cron.php
+  ```
 
 ## Testing
 Run the test suite using PHPUnit:
+  ```bash
   docker exec -it apache vendor/bin/phpunit tests
+  ```
 
 ## Key Files
 - app/Controllers/HomeController.php: Handles search functionality.
