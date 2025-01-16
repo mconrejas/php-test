@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install and enable the Redis PHP extension
 RUN pecl install redis && docker-php-ext-enable redis
+RUN docker-php-ext-install pcntl
 
 # Set the working directory
 WORKDIR /var/www/html
