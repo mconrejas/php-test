@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <author>Tolstoy</author>
+        <name>Foundation</name>
+    </book>
+    <book>
+        <author>Shakespeare</author>
+        <name>Robots and Empire</name>
+    </book>
+</library>

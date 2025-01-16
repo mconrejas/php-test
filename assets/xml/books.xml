@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <author>Isaac Asimov</author>
+        <name>Foundation</name>
+    </book>
+    <book>
+        <author>Isaac Asimov</author>
+        <name>Robots and Empire</name>
+    </book>
+    <book>
+        <author>J.R.R. Tolkien</author>
+        <name>The Hobbit</name>
+    </book>
+    <book>
+        <author>J.R.R. Tolkien</author>
+        <name>The Lord of the Rings</name>
+    </book>
+    <book>
+        <author>George Orwell</author>
+        <name>1984</name>
+    </book>
+    <book>
+        <author>George Orwell</author>
+        <name>Animal Farm</name>
+    </book>
+    <book>
+        <author>Haruki Murakami</author>
+        <name>Norwegian Wood</name>
+    </book>
+    <book>
+        <author>Haruki Murakami</author>
+        <name>Kafka on the Shore</name>
+    </book>
+    <book>
+        <author>John Tolkien</author>
+        <name></name>
+    </book>
+    <book>
+        <author>Толстой</author> <!-- Russian -->
+        <name>Война и мир</name>  <!-- Russian -->
+    </book>
+    <book>
+        <author>이문열</author> <!-- Korean -->
+        <name>우리들의 일그러진 영웅</name> <!-- Korean -->
+    </book>
+    <book>
+        <author>村上春樹</author> <!-- Japanese -->
+        <name>ノルウェイの森</name> <!-- Japanese -->
+    </book>
+</library>

@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: xml_test
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
+    depends_on:
+      - postgres  
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  pg_data: {}
