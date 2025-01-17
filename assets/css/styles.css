@@ -24,12 +24,6 @@ h1 {
 }
 
 /* Search Form */
-form {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 input {
   width: 70%;
   padding: 10px;
@@ -54,7 +48,7 @@ button:hover {
 }
 
 /* DataTable Styles */
-#results {
+#results-container {
   margin-top: 20px;
   overflow-x: auto;
 }
