@@ -14,15 +14,12 @@ RUN docker-php-ext-install pcntl
 # Set permissions for web server
 RUN chown -R www-data:www-data /var/www/html
 
-# Create necessary directories
-RUN mkdir -p /var/www/html/logs && chmod 777 /var/www/html/logs
-
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
 # Copy application code
 COPY ./ /var/www/html
-RUN chmod 644 .htaccess
+RUN chmod 644 .htaccess && chmod 777 /var/www/html/logs
 
 RUN echo "0 * * * * /usr/local/bin/php /var/www/html/scripts/cron.php >> /var/www/html/logs/cron.log 2>&1" > /etc/cron.d/app-cron
 RUN chmod 0644 /etc/cron.d/app-cron && crontab /etc/cron.d/app-cron

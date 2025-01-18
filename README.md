@@ -11,9 +11,7 @@ This test project is a PHP-based web application that allows users to search for
 - **Frontend**: Built with HTML5, CSS3, and native JavaScript for a modern user interface.
 
 ## Requirements
-- PHP 8.1 or higher
-- Redis server
-- Web server (e.g., Apache or Nginx)
+- docker desktop
 
 ## Setup
 1. Clone the repository and navigate to the project directory:
